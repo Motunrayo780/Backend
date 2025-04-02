@@ -1,10 +1,18 @@
 {
     "version":2,
-"rewrites":[
+"name":"foodApi",
+"routes":[
 
-{"source": "/(.*)",
-"destination": "/"
+{"src": "/(.*)",
+"dest": "/"
 }
 
+],
+"builds":[
+
+    {
+        "src": "/app.js",
+        "use": "@vercel/node"
+    }
 ]
 }
